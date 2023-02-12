@@ -33,3 +33,7 @@
 
 .vscode
 *.dSYM
+*
+
+!*.cpp
+!*.h
