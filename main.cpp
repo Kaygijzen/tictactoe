@@ -1,15 +1,24 @@
 #include <iostream>
 #include <vector>
 #include <string>
-#include "board.h"
+
+#include "tictactoe.h"
 
 using namespace std;
 
 int main()
 {
-    Board board;
+    TicTacToe g;
 
-    cout << board.get_board();
+    cout << g.board.to_string() << endl;
 
+    bool running = true;
+    // while (running) {
+    // }
+
+    g.play();
+
+
+    // cout << g.board.get_board() << endl;
     return 0;
 }

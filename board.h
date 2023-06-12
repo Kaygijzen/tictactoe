@@ -86,7 +86,7 @@ class Board {
         }
 
 
-        pair<string,vector<pair<int,int> > > get_board_available_inputs() {
+        pair<string,vector<pair<int,int> > > get_available_inputs() {
             Board board_available_inputs;
             vector<pair<int,int> > empty_spots;
 
@@ -109,7 +109,6 @@ class Board {
 
         void insert_value(string value, int i, int j) {
             if (values[i][j] == " ") {
-                cout<<value<<endl;
                 values[i][j] = value;
             }
         }
