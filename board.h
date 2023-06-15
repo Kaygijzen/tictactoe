@@ -12,17 +12,14 @@ class Board {
         };
 
         bool is_board_full() {
-            bool isFull = true;
-
             for (int i = 0; i < 3; i++) {
                 for (int j = 0; j < 3; j++) {
                     if (values[i][j] == ' ') {
-                        isFull = false;
+                        return false;
                     }
                 }
             }
-
-            return isFull;
+            return true;
         }
 
         int check_winner() {
